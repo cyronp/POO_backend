@@ -2,11 +2,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Main extends ConsultaID{
+public class Main extends Consulta{
     public static void main(String[] args){
         connect();
         createNewDB();
-        ConsultaID.idconsult(1);
+        Consulta.Select();
     }
 
     private static void createNewDB() {
